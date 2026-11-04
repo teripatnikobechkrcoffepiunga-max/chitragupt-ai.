@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-soft-purple: #f8f3fd;
+    --card-soft-purple: #fcf9ff;
+    --border-soft-purple: #e5d7f3;
+    --accent-purple: #a855f7;
+    --accent-purple-light: #e9d5ff;
+    --accent-pink: #f472b6;
+    --accent-pink-light: #fce7f3;
+    --text-primary: #28153b;
+    --text-muted: #6b557f;
+  }
+
+  body {
+    background-color: #f7f2fc;
+    color: #28153b;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(168, 85, 247, 0.25);
+    color: #1e0f2d;
+  }
+}
+
+/* Custom soft scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8c4eb;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
+
+/* Custom soft glow classes */
+.soft-glow-pink {
+  box-shadow: 0 0 25px -2px rgba(244, 114, 182, 0.35);
+}
+
+.soft-glow-pink-lg {
+  box-shadow: 0 0 40px -4px rgba(244, 114, 182, 0.45);
+}
+
+.soft-glow-purple {
+  box-shadow: 0 0 25px -2px rgba(168, 85, 247, 0.25);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(229, 215, 243, 0.8);
+}
+
+.pink-gradient-text {
+  background: linear-gradient(135deg, #fcfbfe 0%, #fbcfe8 50%, #f9a8d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Chitragupt AI",
+  "description": "Chitragupt AI — The all-knowing, multilingual, privacy-first AI assistant crafted with ChatGPT elegance and zero-knowledge data controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
